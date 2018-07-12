@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>vue_test</title>
+  </head>
+  <body>
+    <h1>Vue test with DJango</h1>
+    {{ info }}
+    {% load render_bundle from webpack_loader %}
+    <div id="app">
+       <app></app>
+    </div>
+   {% render_bundle 'main' %}
+
+
+
+   <script type="text/javascript">
+     alert("OUTSIDE VUE")
+   </script>
+  </body>
+</html>
